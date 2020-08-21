@@ -6,9 +6,33 @@ package com.enfore.gradleintro;
 import com.enfore.gradleintro.models.User;
 import com.google.gson.Gson;
 
+import java.io.InputStream;
+import java.nio.charset.StandardCharsets;
+import java.util.Scanner;
+
 public class Library {
     public static void main(String[] args) {
         User user = new User("Jane", "Doe");
         System.out.println(new Gson().toJson(user));
+
+        fromResources();
+    }
+
+    private static void fromResources() {
+        System.out.println(readFile("models/anil_kaiser.json"));
+        System.out.println(readFile("models/arnold_drew.json"));
+        System.out.println(readFile("models/quentin_hood.json"));
+    }
+
+    private static String readFile(String filePath) {
+        InputStream resourceAsStream = Library.class.getClassLoader().getResourceAsStream(filePath);
+        if (resourceAsStream == null) {
+            return null;
+        }
+        String text;
+        try (Scanner scanner = new Scanner(resourceAsStream, StandardCharsets.UTF_8.name())) {
+            text = scanner.useDelimiter("\\A").next();
+        }
+        return text;
     }
 }
