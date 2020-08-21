@@ -9,6 +9,7 @@
 plugins {
     // Apply the java-library plugin to add support for Java Library
     `java-library`
+    id("com.github.johnrengelman.shadow") version "6.0.0"
 }
 
 repositories {
