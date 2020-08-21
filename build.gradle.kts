@@ -18,6 +18,7 @@ repositories {
 }
 
 dependencies {
+    implementation(project(":models"))
     implementation("com.google.code.gson:gson:2.8.6")
     // This dependency is exported to consumers, that is to say found on their compile classpath.
     api("org.apache.commons:commons-math3:3.6.1")

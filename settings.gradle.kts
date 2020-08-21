@@ -8,3 +8,4 @@
  */
 
 rootProject.name = "gradle_intro"
+include("models")

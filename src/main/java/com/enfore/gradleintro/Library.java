@@ -3,8 +3,12 @@
  */
 package com.enfore.gradleintro;
 
+import com.enfore.gradleintro.models.User;
+import com.google.gson.Gson;
+
 public class Library {
-    public boolean someLibraryMethod() {
-        return true;
+    public static void main(String[] args) {
+        User user = new User("Jane", "Doe");
+        System.out.println(new Gson().toJson(user));
     }
 }
