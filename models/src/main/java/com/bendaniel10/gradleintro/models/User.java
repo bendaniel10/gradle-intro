@@ -1,4 +1,4 @@
-package com.enfore.gradleintro.models;
+package com.bendaniel10.gradleintro.models;
 
 public class User {
     private final String firstName;

@@ -39,7 +39,7 @@ tasks {
             attributes(
                     "Package-Title" to "Gradle intro",
                     "Package-Version" to project.version.toString(),
-                    "Main-Class" to "com.enfore.gradleintro.Library",
+                    "Main-Class" to "com.bendaniel10.gradleintro.Library",
                     "Created-By" to "${System.getProperty("java.version")} (${System.getProperty("java.vendor")} ${System.getProperty("java.vm.version")})"
             )
         }

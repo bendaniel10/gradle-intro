@@ -2,7 +2,7 @@ plugins {
     java
 }
 
-group = "com.enfore.gradleintro"
+group = "com.bendaniel10.gradleintro"
 version = "1.00"
 
 repositories {
