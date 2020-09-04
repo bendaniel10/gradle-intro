@@ -20,7 +20,6 @@ repositories {
     // You can declare any Maven/Ivy/file repository here.
     jcenter()
 }
-
 dependencies {
     api(project(":models"))
     implementation("com.google.code.gson:gson:2.8.6")

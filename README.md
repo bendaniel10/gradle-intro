@@ -1,0 +1,1 @@
+A simple gradle (java) project that shows basic things that you could do with gradle. 
